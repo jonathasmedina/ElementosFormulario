@@ -6,36 +6,187 @@
     android:layout_height="match_parent"
     tools:context=".MainActivityChips">
 
-    <com.google.android.material.chip.ChipGroup
-        app:singleLine="true"
-        app:chipSpacing="60dp"
-        app:chipSpacingHorizontal="20dp"
-        app:chipSpacingVertical="20dp"
-        android:id="@+id/chipGroup"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="85dp"
+        android:text="ChipGroup - Entry"
+        app:layout_constraintBottom_toTopOf="@+id/chipGroupEntry"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/buttonVerificaChip" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ChipGroup - Choice"
+        app:layout_constraintBottom_toTopOf="@+id/chipGroupChoice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroupEntry" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ChipGroup - Filter"
+        app:layout_constraintBottom_toTopOf="@+id/chipGroupFilter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroupChoice" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ChipGroup - Action"
+        app:layout_constraintBottom_toTopOf="@+id/chipGroupAction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroupFilter" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:chipSpacing="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip"
+            android:id="@+id/chip1Entry"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:text="Opção 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2Entry"
+            android:text="Opção 2"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3Entry"
+            android:text="Opção 3"
             style="@style/Widget.MaterialComponents.Chip.Entry"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:chipSpacing="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip2"
+            android:id="@+id/chip4Choice"
+            android:text="Opção 4"
             style="@style/Widget.MaterialComponents.Chip.Choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/chip3"
-            android:layout_width="wrap_content"
+            android:id="@+id/chip5Choice"
+            android:text="Opção 5"
             style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6Choice"
+            android:text="Opção 6"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip7Filter"
+            android:text="Opção 7"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip8Filter"
+            android:text="Opção 8"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip9Filter"
+            android:text="Opção 9"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip10Action"
+            android:text="Opção 10"
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip11Action"
+            android:text="Opção 11"
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip12Action"
+            android:text="Opção 12"
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <Button
+        android:id="@+id/buttonVerificaChip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificar Marcados (entry)"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

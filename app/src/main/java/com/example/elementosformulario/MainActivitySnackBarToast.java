@@ -24,6 +24,12 @@ public class MainActivitySnackBarToast extends AppCompatActivity {
         bt2 = findViewById(R.id.buttonSnack);
 
         //exemplo com lambda
+        /*
+        Em Java, funções lambda são uma forma concisa de criar uma implementação de uma interface funcional.
+        Uma interface funcional é uma interface que possui exatamente um método abstrato.
+        As funções lambda permitem que você forneça uma implementação desse método abstrato sem a necessidade
+         de criar uma classe anônima completa.
+         */
         bt1.setOnClickListener(view ->
                 Toast.makeText(this, "Isso é um toast", Toast.LENGTH_SHORT).show()
         );
