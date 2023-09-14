@@ -23,12 +23,10 @@ public class MainActivitySnackBarToast extends AppCompatActivity {
         bt1 = findViewById(R.id.buttonToast);
         bt2 = findViewById(R.id.buttonSnack);
 
-
         //exemplo com lambda
         bt1.setOnClickListener(view ->
                 Toast.makeText(this, "Isso é um toast", Toast.LENGTH_SHORT).show()
         );
-
 
         //exemplo sem lambda
         bt2.setOnClickListener(new View.OnClickListener() {
@@ -47,4 +45,9 @@ public class MainActivitySnackBarToast extends AppCompatActivity {
             finish();
         }
     };
+
+    //ou, com lambda:
+    //View.OnClickListener ouvinte = view -> finish();
+
+
 }
