@@ -18,8 +18,6 @@ public class MainActivitySwitch extends AppCompatActivity {
 
         onOffSwitch = findViewById(R.id.switch1);
 
-
-
         onOffSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
             @Override

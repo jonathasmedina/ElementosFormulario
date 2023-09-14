@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add("Switch");
         arrayList.add("CheckBox");
         arrayList.add("SnackBar e Toast");
+        arrayList.add("RadioGroup");
 
         arrayListCopia = new ArrayList<>(arrayList);
 
@@ -64,6 +65,10 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(i == 3){
                     Intent intent = new Intent(MainActivity.this, MainActivitySnackBarToast.class);
+                    startActivity(intent);
+                }
+                if(i == 4){
+                    Intent intent = new Intent(MainActivity.this, MainActivityRadioGroup.class);
                     startActivity(intent);
                 }
             }
