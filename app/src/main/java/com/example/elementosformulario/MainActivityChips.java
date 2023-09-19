@@ -46,6 +46,10 @@ public class MainActivityChips extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.e("fechado ", "fechado - id: "+view.getId());
+                //remover do grupo
+                chipGroup_.removeView(chip1_);
+                //ou
+                //chipgroup.removeView(view);
             }
         });
 
@@ -55,10 +59,11 @@ public class MainActivityChips extends AppCompatActivity {
             public void onClick(View view) {
                 //recuperando itens selecionados em um grupo
                 List<Integer> ids = chipGroup_.getCheckedChipIds();
+
                 for (Integer id:ids){
                     Log.e("id:", ""+id);
                     Chip chip = chipGroup_.findViewById(id);
-                    //....
+                    Log.e("marcado", "Chip marcado: "+chip.getText().toString());
                 }
             }
         });
