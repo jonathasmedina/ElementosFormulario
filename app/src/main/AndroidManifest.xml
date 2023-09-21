@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ElementosFormulario"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivityCardView"
+            android:exported="false" />
+        <activity
             android:name=".MainActivityRadioGroup"
             android:exported="false" />
         <activity
