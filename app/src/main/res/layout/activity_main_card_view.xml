@@ -6,13 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivityCardView">
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginTop="160dp"
+        android:layout_margin="20dp"
         android:clickable="true"
         android:foreground="?android:attr/selectableItemBackground"
         app:cardCornerRadius="20dp"
@@ -34,9 +32,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
             android:layout_margin="5dp"
-            android:text="Exemplo de CarvView"
+            android:text="Exemplo de CardView"
             android:textSize="20sp"
             android:textStyle="bold" />
-    </androidx.cardview.widget.CardView>
 
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

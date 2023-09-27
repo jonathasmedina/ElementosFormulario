@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add("SnackBar e Toast");
         arrayList.add("RadioGroup");
         arrayList.add("CardView");
+        arrayList.add("TextWatcher");
 
         arrayListCopia = new ArrayList<>(arrayList);
 
@@ -74,6 +76,10 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(i == 5){
                     Intent intent = new Intent(MainActivity.this, MainActivityCardView.class);
+                    startActivity(intent);
+                }
+                if(i == 6){
+                    Intent intent = new Intent(MainActivity.this, MainActivityTextWatcher.class);
                     startActivity(intent);
                 }
             }

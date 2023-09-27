@@ -42,15 +42,12 @@ public class MainActivityChips extends AppCompatActivity {
         });
 
         //responde ao clique no ícone de fechar, se existente
-        chip1_.setOnCloseIconClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.e("fechado ", "fechado - id: "+view.getId());
-                //remover do grupo
-                chipGroup_.removeView(chip1_);
-                //ou
-                //chipgroup.removeView(view);
-            }
+        chip1_.setOnCloseIconClickListener(view -> {
+            Log.e("fechado ", "fechado - id: "+view.getId());
+            //remover do grupo
+            chipGroup_.removeView(chip1_);
+            //ou
+            //chipgroup.removeView(view);
         });
 
         //recuperando itens selecionados em um grupo
